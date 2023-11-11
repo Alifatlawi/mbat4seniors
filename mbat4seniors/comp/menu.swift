@@ -35,14 +35,14 @@ struct menu: View {
                     .font(.headline.bold())
                     .foregroundColor(.black.opacity(0.7))
 
-//                NavigationLink(destination: ChooseMyselfView()) {
-//                    MenuItemView(title: "I WILL CHOOSE MYSELF?")
-//                }
-//                Divider()
-//
-//                NavigationLink(destination: SurpriseMeView()) {
-//                    MenuItemView(title: "SURPRISE ME")
-//                }
+                NavigationLink(destination: IwillChooseView().navigationBarBackButtonHidden(true)) {
+                    MenuItemView(title: "I WILL CHOOSE MYSELF?")
+                }
+                Divider()
+
+                NavigationLink(destination: IwillChooseView().navigationBarBackButtonHidden(true)) {
+                    MenuItemView(title: "SURPRISE ME")
+                }
             }
         }
         .padding(.horizontal)

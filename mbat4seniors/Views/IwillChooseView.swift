@@ -8,6 +8,10 @@
 import SwiftUI
 import WebKit
 
+
+
+
+
 struct IwillChooseView: View {
     
     @State private var showMenu = false
@@ -17,6 +21,7 @@ struct IwillChooseView: View {
     @State private var showClaying = false
     @State private var showCrafting = false
     @State private var showOnemore = false
+    
     
     var body: some View {
         ScrollView {

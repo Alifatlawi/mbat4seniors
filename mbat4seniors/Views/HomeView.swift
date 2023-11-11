@@ -21,7 +21,7 @@ struct HomeView: View {
                     
                     UserButton(title: "EDUCATOR", destination: EducatorView().navigationBarBackButtonHidden(true), color: Color("Color1"))
                     Spacer(minLength: 50)
-                    UserButton(title: "SENIOR", destination: EducatorView().navigationBarBackButtonHidden(true), color: Color("Color2"))
+                    UserButton(title: "SENIOR", destination: SeniorView().navigationBarBackButtonHidden(true), color: Color("Color2"))
                         .padding(.bottom)
                     
                     Spacer(minLength: 50)
@@ -30,6 +30,7 @@ struct HomeView: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

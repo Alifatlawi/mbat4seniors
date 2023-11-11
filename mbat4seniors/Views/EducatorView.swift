@@ -33,6 +33,7 @@ struct EducatorView: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

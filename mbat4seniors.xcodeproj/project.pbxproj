@@ -16,11 +16,11 @@
 		14BACE1D2AFEA209008DAA11 /* AboutMbatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BACE1C2AFEA209008DAA11 /* AboutMbatView.swift */; };
 		14BACE1F2AFEAAF2008DAA11 /* SeniorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BACE1E2AFEAAF2008DAA11 /* SeniorView.swift */; };
 		14BACE212AFEAC57008DAA11 /* IwillChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BACE202AFEAC57008DAA11 /* IwillChooseView.swift */; };
+		14DC30942AFFC3B0003845F8 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC30932AFFC3B0003845F8 /* MusicView.swift */; };
 		410548A22AFE34050063F527 /* mbat4seniorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410548A12AFE34050063F527 /* mbat4seniorsApp.swift */; };
 		410548A42AFE34050063F527 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410548A32AFE34050063F527 /* ContentView.swift */; };
 		410548A62AFE34060063F527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410548A52AFE34060063F527 /* Assets.xcassets */; };
 		410548A92AFE34060063F527 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410548A82AFE34060063F527 /* Preview Assets.xcassets */; };
-		410548B02AFE43E70063F527 /* test.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 410548AF2AFE43E70063F527 /* test.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +33,12 @@
 		14BACE1C2AFEA209008DAA11 /* AboutMbatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMbatView.swift; sourceTree = "<group>"; };
 		14BACE1E2AFEAAF2008DAA11 /* SeniorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeniorView.swift; sourceTree = "<group>"; };
 		14BACE202AFEAC57008DAA11 /* IwillChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IwillChooseView.swift; sourceTree = "<group>"; };
+		14DC30932AFFC3B0003845F8 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		4105489E2AFE34050063F527 /* mbat4seniors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbat4seniors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		410548A12AFE34050063F527 /* mbat4seniorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbat4seniorsApp.swift; sourceTree = "<group>"; };
 		410548A32AFE34050063F527 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		410548A52AFE34060063F527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		410548A82AFE34060063F527 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		410548AF2AFE43E70063F527 /* test.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = test.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +55,7 @@
 		14BACE0E2AFE648F008DAA11 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				14DC30922AFFC396003845F8 /* videosViews */,
 				14BACE0F2AFE649E008DAA11 /* HomeView.swift */,
 				14BACE162AFE7CAA008DAA11 /* EducatorView.swift */,
 				14BACE182AFE8198008DAA11 /* AboutTheProjectView.swift */,
@@ -73,6 +74,14 @@
 				14BACE142AFE743E008DAA11 /* rectanglev.swift */,
 			);
 			path = comp;
+			sourceTree = "<group>";
+		};
+		14DC30922AFFC396003845F8 /* videosViews */ = {
+			isa = PBXGroup;
+			children = (
+				14DC30932AFFC3B0003845F8 /* MusicView.swift */,
+			);
+			path = videosViews;
 			sourceTree = "<group>";
 		};
 		410548952AFE34050063F527 = {
@@ -100,7 +109,6 @@
 				410548A32AFE34050063F527 /* ContentView.swift */,
 				410548A52AFE34060063F527 /* Assets.xcassets */,
 				410548A72AFE34060063F527 /* Preview Content */,
-				410548AF2AFE43E70063F527 /* test.rtf */,
 			);
 			path = mbat4seniors;
 			sourceTree = "<group>";
@@ -172,7 +180,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				410548A92AFE34060063F527 /* Preview Assets.xcassets in Resources */,
-				410548B02AFE43E70063F527 /* test.rtf in Resources */,
 				410548A62AFE34060063F527 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +201,7 @@
 				14BACE1B2AFE900D008DAA11 /* ProductsView.swift in Sources */,
 				14BACE192AFE8198008DAA11 /* AboutTheProjectView.swift in Sources */,
 				14BACE132AFE7135008DAA11 /* menu.swift in Sources */,
+				14DC30942AFFC3B0003845F8 /* MusicView.swift in Sources */,
 				410548A22AFE34050063F527 /* mbat4seniorsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
