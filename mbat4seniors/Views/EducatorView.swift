@@ -25,13 +25,20 @@ struct EducatorView: View {
                         .padding(.top)
                     
                     Spacer(minLength: 50)
-                    UserButton(title: "ABOUT THE PROJECT", destination: AboutTheProjectView().navigationBarBackButtonHidden(true), color: Color("Color1"))
+                    UserButton(title: "ABOUT THE PROJECT", destination: AboutTheProjectView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                        .navigationBarHidden(true), color: Color("Color1"))
                     Spacer(minLength: 50)
-                    UserButton(title: "PRODUCTS", destination: ProductsView().navigationBarBackButtonHidden(true), color: Color("Color2"))
+                    UserButton(title: "PRODUCTS", destination: ProductsView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                        .navigationBarHidden(true), color: Color("Color2"))
                     Spacer(minLength: 50)
-                    UserButton(title: "ABOUT MBAT", destination: AboutMbatView().navigationBarBackButtonHidden(true), color: Color("Color1"))
+                    UserButton(title: "ABOUT MBAT", destination: AboutMbatView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                        .navigationBarHidden(true), color: Color("Color1"))
                 }
             }
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
+//            .edgesIgnoringSafeArea(.top)
+
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

@@ -19,9 +19,11 @@ struct HomeView: View {
                     
                     SectionHeader(title: "Who Are You?")
                     
-                    UserButton(title: "EDUCATOR", destination: EducatorView().navigationBarBackButtonHidden(true), color: Color("Color1"))
+                    UserButton(title: "EDUCATOR", destination: EducatorView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                        .navigationBarHidden(true), color: Color("Color1"))
                     Spacer(minLength: 50)
-                    UserButton(title: "SENIOR", destination: SeniorView().navigationBarBackButtonHidden(true), color: Color("Color2"))
+                    UserButton(title: "SENIOR", destination: SeniorView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                        .navigationBarHidden(true), color: Color("Color2"))
                         .padding(.bottom)
                     
                     Spacer(minLength: 50)
@@ -29,6 +31,9 @@ struct HomeView: View {
                     Footer()
                 }
             }
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
+//            .edgesIgnoringSafeArea(.top)
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
@@ -79,7 +84,8 @@ struct TopBar3: View {
 
     var body: some View {
         HStack {
-            NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true)) {
+            NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                .navigationBarHidden(true)) {
                 Image(systemName: "chevron.left")
                     .font(.title.bold())
                     .foregroundStyle(.black.opacity(0.6))

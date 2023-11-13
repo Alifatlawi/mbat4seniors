@@ -79,12 +79,17 @@ struct SeniorView: View {
                     }
                     
                     if let activity = randomActivity {
-                        NavigationLink(destination: MusicView(text: activity.title, color: activity.color, ylink: activity.videoLink).navigationBarBackButtonHidden(true), isActive: $navigateToSurprise) {
+                        NavigationLink(destination: MusicView(text: activity.title, color: activity.color, ylink: activity.videoLink).navigationBarBackButtonHidden(true).navigationBarTitle("")
+                            .navigationBarHidden(true), isActive: $navigateToSurprise) {
                             EmptyView()
                         }
                     }
                 }
             }
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
+//            .edgesIgnoringSafeArea(.top)
+
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

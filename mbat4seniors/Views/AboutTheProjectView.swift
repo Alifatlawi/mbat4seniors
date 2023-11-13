@@ -52,6 +52,8 @@ struct AboutTheProjectView: View {
                 }
                 .id(0) // ID for ScrollViewReader
             }
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
         }
     }
 }
