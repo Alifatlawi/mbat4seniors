@@ -15,17 +15,20 @@ struct menu: View {
                     .font(.headline.bold())
                     .foregroundColor(.black.opacity(0.7))
 
-                NavigationLink(destination: AboutTheProjectView().navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: AboutTheProjectView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                    .navigationBarHidden(true)) {
                     MenuItemView(title: "ABOUT THE PROJECT")
                 }
                 Divider()
 
-                NavigationLink(destination: ProductsView().navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: ProductsView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                    .navigationBarHidden(true)) {
                     MenuItemView(title: "PRODUCTS")
                 }
                 Divider()
 
-                NavigationLink(destination: AboutMbatView().navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: AboutMbatView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                    .navigationBarHidden(true)) {
                     MenuItemView(title: "ABOUT MBAT")
                 }
 
@@ -35,12 +38,14 @@ struct menu: View {
                     .font(.headline.bold())
                     .foregroundColor(.black.opacity(0.7))
 
-                NavigationLink(destination: IwillChooseView().navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: IwillChooseView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                    .navigationBarHidden(true)) {
                     MenuItemView(title: "I WILL CHOOSE MYSELF?")
                 }
                 Divider()
 
-                NavigationLink(destination: IwillChooseView().navigationBarBackButtonHidden(true)) {
+                NavigationLink(destination: IwillChooseView().navigationBarBackButtonHidden(true).navigationBarTitle("")
+                    .navigationBarHidden(true)) {
                     MenuItemView(title: "SURPRISE ME")
                 }
             }
